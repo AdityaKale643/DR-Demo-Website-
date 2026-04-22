@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Raj Sharma - Premium Medical Care</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-stethoscope"></i>
+                <span>MediCare</span>
+            </div>
+            
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#testimonials" class="nav-link">Testimonials</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="fade-in">Trusted Care for Your Health</h1>
+            <p class="fade-in">Experience premium medical care from Dr. Raj Sharma</p>
+            <div class="hero-buttons fade-in">
+                <button class="btn btn-primary" onclick="scrollToAppointment()">Book Appointment</button>
+                <button class="btn btn-secondary" onclick="scrollToContact()">Contact Now</button>
+            </div>
+        </div>
+        <div class="hero-overlay"></div>
+    </section>
+
+    <!-- About Doctor Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-image reveal-fade">
+                    <div class="image-placeholder">
+                        <i class="fas fa-user-doctor"></i>
+                    </div>
+                </div>
+                <div class="about-content reveal-fade">
+                    <h2>About Dr. Raj Sharma</h2>
+                    <div class="experience-badge">
+                        <span class="badge-number">15+</span>
+                        <span class="badge-text">Years of Experience</span>
+                    </div>
+                    <p>Dr. Raj Sharma is a highly respected medical professional with over 15 years of experience in providing exceptional patient care. With a commitment to using the latest medical technologies and evidence-based practices, Dr. Sharma has earned the trust of thousands of satisfied patients.</p>
+                    
+                    <div class="specialization">
+                        <h3>Specializations</h3>
+                        <ul>
+                            <li><i class="fas fa-check-circle"></i> General Medicine</li>
+                            <li><i class="fas fa-check-circle"></i> Preventive Care</li>
+                            <li><i class="fas fa-check-circle"></i> Health Management</li>
+                            <li><i class="fas fa-check-circle"></i> Chronic Disease Management</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="credentials">
+                        <h3>Credentials</h3>
+                        <p><strong>MD</strong> - Internal Medicine, Medical University</p>
+                        <p><strong>Board Certified</strong> - American Board of Internal Medicine</p>
+                        <p><strong>Fellowship</strong> - Johns Hopkins Medical Center</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2 class="section-title reveal-fade">Our Services</h2>
+            <p class="section-subtitle reveal-fade">Comprehensive healthcare solutions tailored to your needs</p>
+            
+            <div class="services-grid">
+                <div class="service-card reveal-fade">
+                    <div class="service-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3>Preventive Care</h3>
+                    <p>Regular health checkups and preventive screenings to keep you healthy and catch potential issues early.</p>
+                    <a href="#contact" class="learn-more">Learn More →</a>
+                </div>
+
+                <div class="service-card reveal-fade">
+                    <div class="service-icon">
+                        <i class="fas fa-pills"></i>
+                    </div>
+                    <h3>Chronic Disease Management</h3>
+                    <p>Expert management of conditions like diabetes, hypertension, and asthma with personalized treatment plans.</p>
+                    <a href="#contact" class="learn-more">Learn More →</a>
+                </div>
+
+                <div class="service-card reveal-fade">
+                    <div class="service-icon">
+                        <i class="fas fa-microscope"></i>
+                    </div>
+                    <h3>Diagnostic Services</h3>
+                    <p>State-of-the-art diagnostic facilities for accurate and timely medical evaluations.</p>
+                    <a href="#contact" class="learn-more">Learn More →</a>
+                </div>
+
+                <div class="service-card reveal-fade">
+                    <div class="service-icon">
+                        <i class="fas fa-stethoscope"></i>
+                    </div>
+                    <h3>Wellness Consultation</h3>
+                    <p>Personalized wellness plans including nutrition, exercise, and lifestyle modifications.</p>
+                    <a href="#contact" class="learn-more">Learn More →</a>
+                </div>
+
+                <div class="service-card reveal-fade">
+                    <div class="service-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3>Telemedicine</h3>
+                    <p>Convenient online consultations from the comfort of your home, available 24/7.</p>
+                    <a href="#contact" class="learn-more">Learn More →</a>
+                </div>
+
+                <div class="service-card reveal-fade">
+                    <div class="service-icon">
+                        <i class="fas fa-clipboard-check"></i>
+                    </div>
+                    <h3>Health Monitoring</h3>
+                    <p>Continuous monitoring and follow-up care to ensure optimal health outcomes.</p>
+                    <a href="#contact" class="learn-more">Learn More →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="why-choose-us">
+        <div class="container">
+            <h2 class="section-title reveal-fade">Why Choose Us</h2>
+            
+            <div class="why-grid">
+                <div class="why-card reveal-fade">
+                    <div class="why-icon">
+                        <i class="fas fa-medal"></i>
+                    </div>
+                    <h3>15+ Years Experience</h3>
+                    <p>Decades of expertise in providing quality medical care with proven track record.</p>
+                </div>
+
+                <div class="why-card reveal-fade">
+                    <div class="why-icon">
+                        <i class="fas fa-microscope"></i>
+                    </div>
+                    <h3>Modern Technology</h3>
+                    <p>State-of-the-art medical equipment and cutting-edge treatment methods.</p>
+                </div>
+
+                <div class="why-card reveal-fade">
+                    <div class="why-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>24/7 Support</h3>
+                    <p>Always available when you need us - round-the-clock customer and medical support.</p>
+                </div>
+
+                <div class="why-card reveal-fade">
+                    <div class="why-icon">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h3>Patient-Centric Care</h3>
+                    <p>Your health and satisfaction are our top priorities in every interaction.</p>
+                </div>
+
+                <div class="why-card reveal-fade">
+                    <div class="why-icon">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h3>Premium Facilities</h3>
+                    <p>Comfortable and hygienic environment designed for your peace of mind.</p>
+                </div>
+
+                <div class="why-card reveal-fade">
+                    <div class="why-icon">
+                        <i class="fas fa-lock"></i>
+                    </div>
+                    <h3>Confidentiality</h3>
+                    <p>Strict patient privacy and data security protocols in place.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <h2 class="section-title reveal-fade">Patient Testimonials</h2>
+            <p class="section-subtitle reveal-fade">Hear what our satisfied patients have to say</p>
+            
+            <div class="testimonials-grid">
+                <div class="testimonial-card reveal-fade">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"Dr. Sharma is exceptionally professional and caring. He took time to explain everything and made me feel at ease. Highly recommended!"</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">A</div>
+                        <div>
+                            <p class="author-name">Aman Verma</p>
+                            <p class="author-title">Patient</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card reveal-fade">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"The best medical experience I've had. Clean clinic, friendly staff, and the doctor really cares about his patients."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">P</div>
+                        <div>
+                            <p class="author-name">Priya Sharma</p>
+                            <p class="author-title">Patient</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card reveal-fade">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"Excellent doctor with great bedside manner. He explained my condition clearly and provided effective treatment. Very satisfied!"</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">R</div>
+                        <div>
+                            <p class="author-name">Rajesh Kumar</p>
+                            <p class="author-title">Patient</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card reveal-fade">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"Professional, punctual, and compassionate. Dr. Sharma is the kind of doctor you feel you can trust completely."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">S</div>
+                        <div>
+                            <p class="author-name">Sneha Patel</p>
+                            <p class="author-title">Patient</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Appointment Form Section -->
+    <section id="appointment" class="appointment">
+        <div class="container">
+            <h2 class="section-title reveal-fade">Book Your Appointment</h2>
+            <p class="section-subtitle reveal-fade">Schedule a consultation with Dr. Raj Sharma</p>
+            
+            <div class="appointment-container">
+                <form id="appointmentForm" class="appointment-form">
+                    <div class="form-group">
+                        <label for="name">Full Name *</label>
+                        <input type="text" id="name" name="name" required placeholder="John Doe">
+                        <span class="error-message" id="nameError"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email Address *</label>
+                        <input type="email" id="email" name="email" required placeholder="john@example.com">
+                        <span class="error-message" id="emailError"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Phone Number *</label>
+                        <input type="tel" id="phone" name="phone" required placeholder="+1 (555) 000-0000">
+                        <span class="error-message" id="phoneError"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="date">Preferred Date *</label>
+                        <input type="date" id="date" name="date" required>
+                        <span class="error-message" id="dateError"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="service">Service Type *</label>
+                        <select id="service" name="service" required>
+                            <option value="">Select a service</option>
+                            <option value="preventive">Preventive Care</option>
+                            <option value="chronic">Chronic Disease Management</option>
+                            <option value="diagnostic">Diagnostic Services</option>
+                            <option value="wellness">Wellness Consultation</option>
+                            <option value="telemedicine">Telemedicine</option>
+                            <option value="general">General Checkup</option>
+                        </select>
+                        <span class="error-message" id="serviceError"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message (Optional)</label>
+                        <textarea id="message" name="message" placeholder="Tell us about your health concerns..." rows="4"></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-submit">Book Appointment</button>
+                    <div class="success-message" id="successMessage">
+                        <i class="fas fa-check-circle"></i>
+                        <p>Thank you! Your appointment request has been submitted. We'll contact you soon.</p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title reveal-fade">Get In Touch</h2>
+            
+            <div class="contact-grid">
+                <div class="contact-info reveal-fade">
+                    <h3>Contact Information</h3>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div>
+                            <h4>Address</h4>
+                            <p>123 Medical Plaza, Healthcare Avenue<br>New York, NY 10001</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div>
+                            <h4>Phone</h4>
+                            <p>+1 (555) 123-4567</p>
+                            <p class="availability">Available 24/7</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div>
+                            <h4>Email</h4>
+                            <p>contact@drsharma.com</p>
+                            <p>appointments@drsharma.com</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div>
+                            <h4>Hours</h4>
+                            <p>Monday - Friday: 9:00 AM - 6:00 PM</p>
+                            <p>Saturday: 10:00 AM - 4:00 PM</p>
+                            <p>Sunday & Holidays: Emergency Only</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-map reveal-fade">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3024.1789157705906!2d-74.00601592346899!3d40.71282547138062!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a22a3855555%3A0xf89d88d0da308f5!2s123%20Medical%20Plaza%2C%20Healthcare%20Avenue%2C%20New%20York%2C%20NY%2010001!5e0!3m2!1sen!2sus!4v1234567890" width="100%" height="400" style="border:0; border-radius: 12px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h4>MediCare</h4>
+                    <p>Providing premium healthcare solutions with compassion and excellence.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link" title="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link" title="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#testimonials">Testimonials</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#">Preventive Care</a></li>
+                        <li><a href="#">Chronic Disease Management</a></li>
+                        <li><a href="#">Diagnostic Services</a></li>
+                        <li><a href="#">Telemedicine</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">HIPAA Compliance</a></li>
+                        <li><a href="#">Accessibility</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Dr. Raj Sharma. All rights reserved. | Designed with <i class="fas fa-heart"></i> for healthcare excellence.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
