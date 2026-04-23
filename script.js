@@ -147,15 +147,12 @@ if (appointmentForm) {
             console.log('📤 Submitting form data:', formData);
 
             // Check if URL is configured
-            if (GOOGLE_APPS_SCRIPT_URL === 'YOUR_WEB_APP_URL_HERE') {
-                throw new Error('Google Apps Script URL not configured. Please update GOOGLE_APPS_SCRIPT_URL in script.js');
-            }
-
+           
             // Submit to Google Apps Script
             const response = await fetch(GOOGLE_APPS_SCRIPT_URL, {
-                method: 'POST',
-                body: FormData.fromObject(formData)
-            });
+    method: 'POST',
+    body: new URLSearchParams(formData)
+});
 
             // Parse response
             const result = await response.json();
